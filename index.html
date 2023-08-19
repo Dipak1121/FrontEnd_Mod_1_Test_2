@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="head">Library System</div>
+      <div id="books">
+        <a href="#section-1" style="color: white; text-decoration: none"
+          >Books</a
+        >
+      </div>
+      <div id="register">
+        <a href="#section-2" style="color: white; text-decoration: none"
+          >Register</a
+        >
+      </div>
+      <div id="contact">Contact Us</div>
+      <div id="logout">Logout</div>
+    </nav>
+
+    <section id="section-1">
+      <table id="outerTable">
+        <caption style="text-align: left">
+          <h1>Books</h1>
+        </caption>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <h3 class="bookname">
+                <a
+                  href="https://www.amazon.in/India-After-Gandhi-History-Revised/dp/9395624590/ref=sr_1_4?crid=39CCLMJHTPLQ2&keywords=India+before+gandhi&qid=1692447617&sprefix=india+before+gan%2Caps%2C1298&sr=8-4"
+                  >India After Gandhi</a
+                >
+              </h3>
+              <table class="innerTable">
+                <tr>
+                  <td>Publication Date: 23-Jun-2006</td>
+                </tr>
+                <tr>
+                  <td>Page Count: 676</td>
+                </tr>
+                <tr>
+                  <td>ISBN: 1234-56789123</td>
+                </tr>
+              </table>
+            </td>
+            <td>Ramchandra Guha</td>
+            <td>Genre 1</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <h3 class="bookname">
+                <a
+                  href="https://www.bookchor.com/book/9789352866717/operating-systems-internals-and-design-principles?gclid=Cj0KCQjw0IGnBhDUARIsAMwFDLnQi0_bGXNe9KiXT8NovFZ0KsMICkHlJMucwb8_iHzq2b349VJenCAaAgPNEALw_wcB"
+                  >Operating System</a
+                >
+              </h3>
+              <table class="innerTable">
+                <tr>
+                  <td>Publication Date: 1999</td>
+                </tr>
+                <tr>
+                  <td>Page Count: 1123</td>
+                </tr>
+                <tr>
+                  <td>ISBN: 9789352866717</td>
+                </tr>
+              </table>
+            </td>
+            <td>William Stallings</td>
+            <td>Genre 2</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <table class="innerTable">
+                <h3 class="bookname"><a href="https://www.amazon.in/Discovery-India-Jawaharlal-Nehru/dp/0143031031">Discovery of India</a></h3>
+                <tr>
+                  <td>Publication Date: Jun-1946</td>
+                </tr>
+                <tr>
+                  <td>Page Count: 921</td>
+                </tr>
+                <tr>
+                  <td>ISBN: 7798802637</td>
+                </tr>
+              </table>
+            </td>
+            <td>Jawaharlal Nehru</td>
+            <td>Genre 3</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="section-2">
+      <h1>Register</h1>
+      <form action="#" method="post" title="Register" id="form">
+        <label for="firstName">First Name</label><br />
+        <input type="text" id="firstName" required /><br />
+        <label for="lastName">Last Name</label><br />
+        <input type="text" id="lastName" required /><br />
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" id="dob" required /><br />
+        <label for="age">Age</label><br />
+        <input type="number" id="age" min="5" max="100" required /><br />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" required /><br />
+        <label for="password">Password</label><br />
+        <input type="password" id="password" required /><br />
+        <label for="cpassword">Confirm Password</label><br />
+        <input type="password" id="cpassword" required /><br />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </body>
+</html>
